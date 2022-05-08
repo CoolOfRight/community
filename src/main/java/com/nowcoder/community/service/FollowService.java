@@ -1,5 +1,7 @@
 package com.nowcoder.community.service;
 
+import com.nowcoder.community.dao.DiscussPostMapper;
+import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.RedisKeyUtil;
@@ -18,6 +20,8 @@ public class FollowService implements CommunityConstant {
     private RedisTemplate redisTemplate;
     @Autowired
     private UserService userService;
+    @Autowired
+    private DiscussPostMapper discussPostMapper;
 
     public void follow(int userId, int entityType, int entityId){
         redisTemplate.execute(new SessionCallback() {
