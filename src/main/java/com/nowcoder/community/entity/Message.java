@@ -19,11 +19,11 @@ public class Message {
         this.id = id;
     }
 
-    public int getFormId() {
+    public int getFromId() {
         return fromId;
     }
 
-    public void setFormId(int fromId) {
+    public void setFromId(int fromId) {
         this.fromId = fromId;
     }
 
