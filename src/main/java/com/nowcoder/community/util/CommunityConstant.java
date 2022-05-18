@@ -49,7 +49,12 @@ public interface CommunityConstant {
      */
     String TOPIC_FOLLOW = "follow";
     /**
+     * 主题：发帖
+     */
+    String TOPIC_PUBLISH = "publish";
+    /**
      * 系统用户id
      */
     int SYSTEM_USER_ID = 1;
+
 }
